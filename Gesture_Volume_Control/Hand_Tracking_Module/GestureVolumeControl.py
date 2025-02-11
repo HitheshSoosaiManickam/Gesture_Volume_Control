@@ -44,7 +44,6 @@ while True:
              cv2.circle(img, (cx,cy), 12, (0,0,255), cv2.FILLED)
 
              length = math.hypot(x2-x1,y2-y1)
-             #print(length)
 
              # Hand Range : 20 to 200
              # Volume Range : -65 to 0
