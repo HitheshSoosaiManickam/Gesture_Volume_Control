@@ -13,6 +13,7 @@ mp_drawing = mp.solutions.drawing_utils
 
 # Initialize System Volume Control
 devices = AudioUtilities.GetSpeakers()
+
 interface = devices.Activate(IAudioEndpointVolume._iid_, CLSCTX_ALL, None)
 volume = cast(interface, POINTER(IAudioEndpointVolume))
 vol_range = volume.GetVolumeRange()
